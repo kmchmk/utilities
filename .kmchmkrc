@@ -6,10 +6,11 @@
 
 
 GREEN='\[\033[01;32m\]'
-BLUE='\[\033[00m\]'
+YELLOW='\[\033[33m\]'
 BLUE='\[\033[01;34m\]'
 WHITE='\[\033[00m\]'
-export PS1=$GREEN'\u@\h'$BLUE':\w/'$WHITE'>'
+
+export PS1="$GREEN\u@\h$BLUE:\w/$YELLOW:\$(git branch 2>/dev/null | grep '^*' | tr -d '* ')$WHITE>"
 
 
 # Aliases
