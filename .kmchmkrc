@@ -1,0 +1,18 @@
+# Add following 3 lines to your ~/.bash_profile and clone this profile in your home
+
+#if [ -f ~/utilities/.kmchmkrc ]; then
+#    source ~/utilities/.kmchmkrc
+#fi
+
+
+GREEN='\[\033[01;32m\]'
+BLUE='\[\033[00m\]'
+BLUE='\[\033[01;34m\]'
+WHITE='\[\033[00m\]'
+export PS1=$GREEN'\u@\h'$BLUE':\w/'$WHITE'>'
+
+
+# Aliases
+alias grep='grep --color=auto'
+alias ll='ls -alFh'
+alias gst='git status'
